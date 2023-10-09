@@ -9,18 +9,25 @@ const foodILike = [
   {
     name : "1",
     image : "2"
-  }
+  },
+  {
+    name : "2",
+    image : "2"
+  },
+  {
+    name : "3",
+    image : "2"
+  },
+  {
+    name : "4",
+    image : "2"
+  },
 ]
 
 function App() {
   return( 
     <div>
-      <h1>Hello</h1>
-      <Food 
-        fav="kimchi"
-        something={true}
-        papapapa ={["Hello",1,2,3,4,5]}
-      />
+      {foodILike.map(dish => <Food name={dish.name}/>)}
     </div> 
   
   );
